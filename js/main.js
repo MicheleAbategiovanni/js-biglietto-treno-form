@@ -25,8 +25,6 @@ buyTicket.addEventListener("click", function () {
 
     let fullName = nameEl.value + " " + lastNameEl.value;
 
-    console.log(fullName)
-
     full_Name.innerHTML = fullName;
 
     if (ageEl.value == 'underage') {
