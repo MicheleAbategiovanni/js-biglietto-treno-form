@@ -60,6 +60,7 @@ buyTicket.addEventListener("click", function () {
 
     }else{
         console.log("Non hai inserito tutti i campi...");
+        alert("ATTENZIONE : CAMPI OBBLIGATORI !")
     }
 
 });
