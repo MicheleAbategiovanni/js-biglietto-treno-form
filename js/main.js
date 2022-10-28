@@ -21,14 +21,35 @@ buyTicket.addEventListener("click", function () {
     // const salvato = ageEl.value;
     // Nel caso in cui volessimo salvere i nostri valori
 
-    if (ageEl.value == 'underage'){
-        console.log("Costo teen");
+    let fullName = nameEl.value + " " + lastNameEl.value;
 
-    }else if (ageEl.value == 'adult' ) {
-        console.log("Costo adulto");
+    console.log(fullName)
 
-    }else if (ageEl.value == 'over65'){
-        console.log("Costo over65");
+    full_Name.innerHTML = fullName;
+
+    if (ageEl.value == 'underage') {
+
+        ticket = (ticket - (ticket * .20)).toFixed(2);
+
+        price.innerHTML = ticket;
+
+        console.log("Costo del biglietto scontato MINORENNI: " + ticket)
+
+    } else if (ageEl.value == 'adult') {
+
+        ticket = ticket.toFixed(2);
+
+        price.innerHTML = ticket;
+
+        console.log("Costo del biglietto SENZA SCONTO da 18 a 65 anni: " + ticket)
+
+    } else if (ageEl.value == 'over65') {
+
+        ticket = (ticket - (ticket * .40)).toFixed(2);
+
+        price.innerHTML = ticket;
+
+        console.log("Costo del biglietto scontato OVER 65: " + ticket)
     }
 
 });
