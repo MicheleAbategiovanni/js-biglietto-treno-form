@@ -100,35 +100,44 @@
                     </a>
                 </div>
 
-                <div class="row row-cols-md-5 align-items-center gy-3">
+                <div class="row row-cols-md-5  gy-3">
 
                     <div class="col-12">
-
-                        <span>Età: </span>
-                        <input type="text" name="" id="" placeholder="Inserisci l'età">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name">
+                            <label>Nome</label>
+                        </div>
                     </div>
 
                     <div class="col-12">
 
-                        <span class="fs-6">Distanza: </span>
-                        <input type="text" name="" id="distance" placeholder="Inserisci l'età">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="lastName">
+                            <label>Cognome</label>
+                        </div>
 
                     </div>
 
 
                     <div class="col-6">
 
-                        <span>Prezzo Pieno: </span>
-                        <span id="sales"></span>
-                        <span>euro</span>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option value="1">Minorenne</option>
+                                <option value="2">Maggiorenne</option>
+                                <option value="3">Over 65</option>
+                            </select>
+                            <label for="floatingSelect">Seleziona l'età</label>
+                        </div>
 
                     </div>
 
                     <div class="col-6">
 
-                        <span>Prezzo Scontato: </span>
-                        <span id="ticket">0</span>
-                        <span>euro</span>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="distance">
+                            <label>Distanza</label>
+                        </div>
 
                     </div>
 
