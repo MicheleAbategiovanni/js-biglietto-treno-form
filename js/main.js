@@ -8,10 +8,6 @@ let ticket;
 
 
 buyTicket.addEventListener("click", function () {
-    nameEl.value;
-    lastNameEl.value;
-    ageEl.value;
-    distanceEl.value;
 
     console.log("Hai inserito come Nome: ", nameEl.value);
     console.log("Hai inserito come Cognome: ", lastNameEl.value);
@@ -20,17 +16,19 @@ buyTicket.addEventListener("click", function () {
 
     ticket = distanceEl.value * .21;
 
-    console.log("Costo biglietto", ticket.toFixed(2));
+    console.log("Costo del biglietto", ticket.toFixed(2));
 
-    if (ageEl.value === underage){
+    // const salvato = ageEl.value;
+    // Nel caso in cui volessimo salvere i nostri valori
+
+    if (ageEl.value == 'underage'){
         console.log("Costo teen");
 
-    }else if (ageEl.value = adult ) {
+    }else if (ageEl.value == 'adult' ) {
         console.log("Costo adulto");
 
-    }else if (ageEl.value = over65){
+    }else if (ageEl.value == 'over65'){
         console.log("Costo over65");
-
     }
 
 });
