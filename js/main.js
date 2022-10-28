@@ -4,7 +4,9 @@ const ageEl = document.querySelector("#ageUser");
 const distanceEl = document.querySelector("#distance");
 const buyTicket = document.querySelector(".btn");
 let ticket;
-
+let coachRandom = Math.floor(Math.random() * 14);
+let sitRandom = Math.floor(Math.random() * 40);
+let codeTicketRandom = Math.floor(Math.random() * 1000000) + 10000;
 
 
 buyTicket.addEventListener("click", function () {
@@ -51,5 +53,10 @@ buyTicket.addEventListener("click", function () {
 
         console.log("Costo del biglietto scontato OVER 65: " + ticket)
     }
+
+    coach.innerHTML = coachRandom;
+    sit.innerHTML = sitRandom;
+    codeTicket.innerHTML = codeTicketRandom;
+
 
 });
