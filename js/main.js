@@ -31,7 +31,7 @@ buyTicket.addEventListener("click", function () {
 
         ticket = (ticket - (ticket * .20)).toFixed(2);
 
-        price.innerHTML = ticket;
+        price.innerHTML = ticket + "€";
 
         console.log("Costo del biglietto scontato MINORENNI: " + ticket)
 
@@ -39,7 +39,7 @@ buyTicket.addEventListener("click", function () {
 
         ticket = ticket.toFixed(2);
 
-        price.innerHTML = ticket;
+        price.innerHTML = ticket + "€";
 
         console.log("Costo del biglietto SENZA SCONTO da 18 a 65 anni: " + ticket)
 
@@ -47,7 +47,7 @@ buyTicket.addEventListener("click", function () {
 
         ticket = (ticket - (ticket * .40)).toFixed(2);
 
-        price.innerHTML = ticket;
+        price.innerHTML = ticket + "€";
 
         console.log("Costo del biglietto scontato OVER 65: " + ticket)
     }
